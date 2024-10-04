@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteiner">
+        <p class="logo">Pass Generator</p>
+
+        <div class="result">
+            <div class="outputField">
+                <input type="text" >
+                <span class="copyLink"></span>
+            </div>
+            <div class="scale"></div>
+        </div>
+        
+        <div class="passwordLength">
+            <div class="description">
+                <p>password Length</p>
+                <span class="meaning">1</span>
+            </div>
+            <input type="range" min="1" max="20">
+        </div>
+
+        <p class="passSettings">pass Settings</p>
+        <div class="options">
+            <div class="lowercase">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Lowercase (a-z)</label>
+            </div>
+            <div class="uppercase">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Uppercase (A-Z)</label>
+            </div>
+            <div class="numbers">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Numbers (0-9)</label>
+            </div>
+            <div class="symbols">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Symbols (!@#$%+)</label>
+            </div>
+            <div class="excludeDuplicate">
+                <input type="checkbox" id="excludeDuplicate">
+                <label for="excludeDuplicate">Exclude Duplicate</label>
+            </div>
+            <div class="includeSpaces">
+                <input type="checkbox" id="includeSpaces">
+                <label for="includeSpaces">Include Spaces</label>
+            </div>
+        </div>
+
+        <button class="generatePassword">generate Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
